@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f2b705;
+}
+
+#container {
+    width: 900px;
+    margin: 3rem auto 0 auto;
+}
+
+#title {
+    background-color: black;
+    color: #f2b705;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.507);
+    border-radius: 2px;
+    & p {
+        font-size: 2.7rem;
+    }
+}
+
+.container_task {
+    background-color: #f9c701;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1.5px 4px 1px rgba(0, 0, 0, 0.507);
+    border-radius: 2px;
+    transition: 0.5s;
+    & input {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    & label {
+        width: 700px; 
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0 4rem 0 2rem;
+        cursor: pointer;
+    }
+    & button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    } & img {
+        width: 2rem;
+    }
+}
+
+.container_task:hover {
+    background-color: black;
+    color: #f9c701;
+}
+
+#container_submit input::placeholder {
+    color: grey;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+#container_submit input {
+    background-color: #fff09d;
+    width: 900px;
+    padding: 2rem;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 1px 1.5px 4px 1px rgba(0, 0, 0, 0.507);
+    border-radius: 2px;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.noTaskMessage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+}
